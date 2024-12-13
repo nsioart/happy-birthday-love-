@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>for my Jade</title>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif; /* Main font for the body */
+            text-align: center;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f0f8ff;
+            background-image: url('https://i.pinimg.com/736x/ec/86/72/ec8672c68cb07f62e6a8bcfa5ea0c40c.jpg'); /* Replace with your image URL */
+            background-size: cover; /* Make the background cover the whole page */
+            background-position: center center; /* Center the background image */
+            background-attachment: fixed; /* Keep the background fixed while scrolling */
+            margin: 0;
+            padding: 0;
+            position: relative;
+        }
+        h1 {
+            margin-top: 50px;
+            font-size: 3rem;
+            font-family: 'Pacifico', cursive; /* Elegant font for the title */
+            color: #ff69b46a;
+        }
+        p {
+            font-size: 1.5rem;
+            margin: 20px auto;
+            width: 80%;
+            font-family: 'Pacifico', cursive; /* Elegant font for the title */
+            color: #333;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            margin: 30px auto;
+            max-width: 900px;
+        }
+        .gallery img {
+            width: 200px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+        }
+        .message-box {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgba(255, 105, 180, 0.8);
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            font-size: 1.5rem;
+            max-width: 80%;
+            text-align: center;
+            font-family: 'Lobster', cursive; /* New font for the message box */
+        }
+        audio {
+            display: none;
+        }
+    </style>
+    <script>
+        function showMessage(message) {
+            const messageBox = document.querySelector('.message-box');
+            messageBox.textContent = message;
+            messageBox.style.display = 'block';
+            document.querySelector('audio').play();
+
+            // Hide the message box after 20 seconds
+            setTimeout(() => {
+                messageBox.style.display = 'none';
+            }, 10000);
+        }
+        window.onload = function() {
+            document.querySelector('audio').play();
+        };
+    </script>
+</head>
+<body>
+    <h1>Happy Birthday, Love!</h1>
+    <p>Happy 20th Birthday to the love of my life! Watching you grow into the amazing person you are has been one of the greatest joys of my life. I’m so grateful for every laugh, every hug, and every moment we share together. You make my world brighter just by being in it. Here's to celebrating you today and always – I can't wait to see all the wonderful things you'll do in this new chapter of your life. Love you more than words can say! </p>
+
+    <div class="gallery">
+        <!-- Add your pictures here -->
+        <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/462556950_902454378324907_7926358614971052573_n.jpg?stp=dst-jpg_s640x640_tt6&_nc_cat=100&ccb=1-7&_nc_sid=0024fc&_nc_eui2=AeEAwxs_VY6LkWejCN-24h3MNtqr2QmMsVU22qvZCYyxVbHuVvwLPFa3Lq4fcY9pQkEFgMDhDl9zbdYD7UzdZ3y7&_nc_ohc=kPA8cZ0bzYcQ7kNvgHFb82U&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.xx&oh=03_Q7cD1QEXrmseqZYzqFcWntkCHtX5nWdPSxNA1bEQBMaPDkaL3g&oe=67832013" alt="Picture 1" onclick="showMessage('Every time I think of you, my heart just melts.')">
+        <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/462574236_1106148390919802_4510911370762867568_n.jpg?stp=dst-jpg_s600x600_tt6&_nc_cat=110&ccb=1-7&_nc_sid=0024fc&_nc_eui2=AeGCWxFspmm_NehFFQBt0RrwNg-c3LdVw0U2D5zct1XDRaAxYE60HBsjrpmLbYj4Qlnnr11tnCUHCLkQfs19y6ok&_nc_ohc=ebclEpuanEgQ7kNvgEbkx_P&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.xx&oh=03_Q7cD1QG5i8T7dwVve3P6SZJj_IhOhIlU8ymdYig96BfV7-vjgQ&oe=67831B9A" alt="Picture 2" onclick="showMessage('I’m so lucky to have you.')">
+        <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/465750477_3863048807243365_5224870323573987305_n.jpg?stp=dst-jpg_s640x640_tt6&_nc_cat=105&ccb=1-7&_nc_sid=0024fc&_nc_eui2=AeE6dKLS9CMNkZ8ckTU2oppZesHeqjWxa6Z6wd6qNbFrpgCPhKlhKqwPjfdufO58qEXHlwfW98VvvWuJgb6uTVoe&_nc_ohc=wuJUwicjFgcQ7kNvgHP7ibH&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.xx&oh=03_Q7cD1QHzY-SiMJ9csgleMTQcombpwesbnnKQlU7VU2Zvd_qBLA&oe=67834637" alt="Picture 3" onclick="showMessage('Every day spent with you feels like a beautiful dream come true.')">
+        <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/462575332_2352618591753977_234860730967460787_n.jpg?stp=dst-jpg_s480x480_tt6&_nc_cat=104&ccb=1-7&_nc_sid=0024fc&_nc_eui2=AeEgjdjjROv3_d_viwFuWpJKsIaQSTwYcJmwhpBJPBhwmfbQird_7BMaYXtLmmT0QPtKD5EUoZoQ1cUjNTXEvn3N&_nc_ohc=X9oH4GmFfQ8Q7kNvgGdnwfl&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.xx&oh=03_Q7cD1QGZiXesYFnBX9zEpRG-RVtt6Yv0TmZLpOnTEgqa_vE1jQ&oe=678326BE" alt="Picture 3" onclick="showMessage('You’re not just my love; you’re my safe place, my favorite person.')">
+        <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/462558907_892829642959392_7513039510112762478_n.jpg?stp=dst-jpg_s640x640_tt6&_nc_cat=100&ccb=1-7&_nc_sid=0024fc&_nc_eui2=AeGcKlg5mNx1E6CxdIl1NHIrQp14z2gI30pCnXjPaAjfSnWxiiKQ19fWU_JkaY7LlYSKSPgngOYWuHo4e7Qm0xk_&_nc_ohc=nmIR1Aw_DvgQ7kNvgFks6LT&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.xx&oh=03_Q7cD1QEt0Htn69Hg22P7mduqSPMA9j-rR5Ktk2e0y6-88jRnRw&oe=6783A30B" alt="Picture 3" onclick="showMessage('Your love makes even the simplest moments feel so special.')">
+        <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/465881638_1089824039446809_4086974142969430783_n.jpg?stp=dst-jpg_s480x480_tt6&_nc_cat=103&ccb=1-7&_nc_sid=0024fc&_nc_eui2=AeF0BSxJoFTLJkjymAfQniAUBi-9klJNuSMGL72SUk25I7TMc4ovLOChLWDcdg6mjr-3WuSbv3blWQoVtpYxeJyq&_nc_ohc=HJGSrWPGoqkQ7kNvgGYZgWN&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.xx&oh=03_Q7cD1QGwAfvrXnJHC1CmkLsP4k8V4oUNkCnK21JOA7INT04jow&oe=6783C622" alt="Picture 3" onclick="showMessage('I still can’t believe I get to be with someone as amazing as you. ')">
+        <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/465881638_8727550677342886_1903485627866460864_n.jpg?stp=dst-jpg_s640x640_tt6&_nc_cat=111&ccb=1-7&_nc_sid=0024fc&_nc_eui2=AeG2Dic-P2h2R8ZTk5Pd5Ta-BZ7V9N2eHV0FntX03Z4dXeqaRf2vQxesVyojNHXopptmVRLwxBa-4CGFPFG9_LdJ&_nc_ohc=4wyZ2Pa56rgQ7kNvgFnQPbY&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.xx&oh=03_Q7cD1QFA6sY5UtUcb-t4oDgtpFgqIx9HWQ3W3AE4eEsT3Zr1sQ&oe=6783A807" alt="Picture 3" onclick="showMessage('You’re my everything.')">
+        <img src="https://scontent.xx.fbcdn.net/v/t1.15752-9/467249640_1346291719880869_3873029298792375113_n.jpg?stp=dst-jpg_s640x640_tt6&_nc_cat=100&ccb=1-7&_nc_sid=0024fc&_nc_eui2=AeHgYc53iU-AsxKTrayukn_YAd6gXACPB68B3qBcAI8Hr25vAaz8qpSK2aDx_ORlRajW0r1ieW7G3SxLuHhyBz6I&_nc_ohc=I2LYoojuyZYQ7kNvgGD0jO4&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.xx&oh=03_Q7cD1QEhUU7wnLwyoNvn0DFZqBxsbcXcB6Ym2F3vJqhQRlROkg&oe=6783B2F7" alt="Picture 3" onclick="showMessage('I’m counting down the minutes until I can be with you again.')">
+        <!-- Add more images as needed -->
+    </div>
+
+    <!-- Message Box -->
+    <div class="message-box"></div>
+
+    <audio autoplay loop>
+        <source src="your-music-file.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+</body>
+</html>
